@@ -316,13 +316,12 @@ combos {
     };
 };
 
-
-    keymap {
+keymap {
         compatible = "zmk,keymap";	
 
 
- default_layer {
-            bindings = <
+default_layer {
+           bindings = <
 
 &tdTABE   &tdqN1          &tdwN2        &tdeN3        &tdrN4        &tdtN5          &tdyN6           &tduN7            &tdiN8           &tdoN9       &tdpN0     &tdDELBSLH
 
