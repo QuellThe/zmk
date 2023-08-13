@@ -266,7 +266,6 @@ combos {
       bindings = <&kp c>, <&kp SPACE>;
     };
 
-
     tdvSPACE: v_SPACE {
       compatible = "zmk,behavior-tap-dance";
       label = "v_SPACE";
@@ -345,11 +344,7 @@ bindings = <
 &MT LCTRL      &MT 	LALT       &MT LGUI 	 &tdxz      &kp SPACE      &kp SPACE        &kp SPACE     &kp SPACE    &kp SPACE        &td,[        &td.]      &kp FSLH 
 
 
- 
     >;
   };
  };
 };
-
-
-
