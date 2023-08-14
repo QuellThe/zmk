@@ -10,7 +10,7 @@
 
 
 #define DEFAULT 0
-#define NUM     1   
+#define NUM     1
 
 
 #define COMBO(NAME, BINDINGS, KEYPOS) \
@@ -36,7 +36,7 @@
 
 combos {
     compatible = "zmk,combos";
-                      
+
     COMBO(fn1, &kp FN1, 11 1)
     COMBO(fn2, &kp FN2, 11 2)
     COMBO(fn3, &kp FN3, 11 3)
@@ -56,8 +56,8 @@ combos {
     COMBO(clrBT, &bt BT_CLR, 5 6 29 30)
     COMBO(usbTog, &out OUT_TOG, 18 19)
     COMBO(scrnUp, c_bri_up, 16 19 20)
-    COMBO(scrnDn, c_bri_dn, 15 19 20)       
-    COMBO(VolUp, c_vol_up, 15 16 20) 
+    COMBO(scrnDn, c_bri_dn, 15 19 20)
+    COMBO(VolUp, c_vol_up, 15 16 20)
     COMBO(VolDN, c_vol_dn, 15 16 19)
     COMBO(MUT, c_mute, 16 17 18 19)
     COMBO(CAPSword, &caps_word,12 23)
@@ -73,7 +73,7 @@ combos {
       tapping-term-ms = <200>;
       bindings = <&kp TAB>, <&kp ESC>;
     };
-                        
+
     tdqN1: Q_N1 {
       compatible = "zmk,behavior-tap-dance";
       label = "Q_N1";
@@ -322,8 +322,7 @@ keymap {
 default_layer {
            bindings = <
 
-&tdTABE   &tdqN1          &tdwN2        &tdeN3        &tdrN4        &tdtN5          &tdyN6           &tduN7            &tdiN8           &tdoN9       &tdpN0     &tdDELBSLH
-
+&tdTABE   &tdqN1          &tdwN2        &tdeN3        &tdrN4        &tdtN5          &tdyN6           &tduN7            &tdiN8          &tdoN9       &tdpN0     &tdDELBSLH
 
 &kb LSHFT      &td a KP_MINUS    &tdsKP_PLUS   &tddLEFT      &tdfDOWN       &tdgSPACE      &kphSPACE    &tdjUP     &tdkRIGHT    &tdlGRAVE        &tdSEMIAPOS      &td RSHFTRET
 
@@ -332,16 +331,16 @@ default_layer {
             >;
         };	
 
-       Num_layer { 		
+       Num_layer {
 bindings = <
 
 &MT TAB ESC    &kp N1          &kp N2        &kp N3        &kp N4        &kp N5          &kp N6           &kp N7            &kp N8           &kp N9       &kp N0     &td DEL BSLASH
 
 
-&kb LSHFT      &kp KP_MINUS    &kp KP_PLUS   &kp LEFT      &kp DOWN       &td SPACE      &kp SPACE      &kp UP       &kp RIGHT    &tdLGRAVE       &tdSEMIAPOS      &kp RETURN		
+&kb LSHFT      &kp KP_MINUS    &kp KP_PLUS   &kp LEFT      &kp DOWN       &td SPACE      &kp SPACE      &kp UP       &kp RIGHT    &tdLGRAVE       &tdSEMIAPOS      &kp RETURN	
 
 
-&MT LCTRL      &MT 	LALT       &MT LGUI 	 &tdxz      &kp SPACE      &kp SPACE        &kp SPACE     &kp SPACE    &kp SPACE        &td,[        &td.]      &kp FSLH 
+&MT LCTRL      &MT 	LALT       &MT LGUI 	 &tdxz      &kp SPACE      &kp SPACE        &kp SPACE     &kp SPACE    &kp SPACE        &td,[        &td.]      &kp FSLH
 
     >;
   };
