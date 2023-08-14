@@ -343,7 +343,6 @@ bindings = <
 
 &MT LCTRL      &MT 	LALT       &MT LGUI 	 &tdxz      &kp SPACE      &kp SPACE        &kp SPACE     &kp SPACE    &kp SPACE        &td,[        &td.]      &kp FSLH 
 
-
     >;
   };
  };
