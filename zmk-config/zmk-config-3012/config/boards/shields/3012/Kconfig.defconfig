@@ -1,6 +1,0 @@
-if SHIELD_3012
-
-config ZMK_3012
-    default "3012"
-
-endif
